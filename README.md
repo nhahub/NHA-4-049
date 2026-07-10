@@ -11,8 +11,9 @@ This project uses a classification model trained on IoT sensor data from 500,000
 ---
 
 ## Project Structure
+
+```text
 Machine_tracking_Prediction/
-│
 ├── data/
 │   ├── raw/
 │   │   └── factory_sensor.csv  
@@ -25,16 +26,17 @@ Machine_tracking_Prediction/
 │
 ├── app/
 │   └── app.py
-│                            
-├── models
+│                                     
+├── models/
 │   └── model.pkl
 │
 ├── docs/
 │   └── project_notes.md   
 │
-├── model_columns.pkl               
+├── model_columns.pkl                
 ├── requirements.txt                  
 └── README.md (you are here)
+```
 ---
 
 ## Dataset
@@ -118,3 +120,11 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
+
+## Notes (only read if you want to train model on your local device, or experiment on it)
+- **add "data" folder**
+- **add 2 sub-folders (raw/processed)**
+- **download data from https://www.kaggle.com/datasets/canozensoy/industrial-iot-dataset-synthetic**
+- **add it to raw folder (rename to factory_sensor)**
+- **run 01_eda file**
+- **run 02_training file**
